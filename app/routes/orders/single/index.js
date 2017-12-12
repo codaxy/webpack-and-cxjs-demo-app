@@ -11,9 +11,8 @@ export default <cx>
                 <Button onClick="onSave" disabled:expr="{$page.saving} || {$page.invalid}">Save</Button>
             </div>
         </PureContainer>
-        <div class="csb-order">
+        <Section mod="card">
             <ValidationGroup invalid:bind="$page.invalid">
-                <Section mod="card">
                     <FlexRow>
                         <div style="margin-left:50px">
                             <strong>Order</strong>
@@ -40,9 +39,8 @@ export default <cx>
                             </div>
                         </div>
                     </FlexRow>
-                </Section>
 
-                <br/>
+                <hr />
 
                 <div class="pad2">
                     <Grid records:bind="$page.orderItems"
@@ -96,8 +94,8 @@ export default <cx>
                     />
                     <Button style="margin: 6px 0 12px 4px;" text="Add" onClick="onAddItem"/>
                 </div>
-                <br/>
-                <Section mod="card" bodyStyle="display: flex">
+                <hr />
+                <FlexRow>
                     <div layout={LabelsLeftLayout} style="margin-left: auto">
                         <NumberField value:bind="$page.order.regularAmount" label="Regular Price" readOnly
                                      inputStyle="text-align: right" format="currency"/>
@@ -108,8 +106,8 @@ export default <cx>
                         <NumberField value:bind="$page.order.totalAmount" label="Total" readOnly
                                      inputStyle="text-align: right; font-weight: bold" format="currency"/>
                     </div>
-                </Section>
+                </FlexRow>
             </ValidationGroup>
-        </div>
+        </Section>
     </main>
 </cx>;

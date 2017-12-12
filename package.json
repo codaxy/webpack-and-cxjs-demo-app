@@ -17,6 +17,7 @@
     "cx": "^18.1.5",
     "cx-google-maps": "^17.11.0",
     "cx-react": "^17.10.0",
+    "cx-theme-aquamarine": "^17.10.1",
     "cx-theme-material": "^17.10.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

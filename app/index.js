@@ -2,7 +2,8 @@ import { Store } from 'cx/data';
 import { Url, History, Widget, startAppLoop } from 'cx/ui';
 import { Timing, Debug } from 'cx/util';
 
-import "cx-theme-material";
+//import "cx-theme-material";
+import "cx-theme-aquamarine";
 
 //css
 import "./index.scss";
@@ -33,7 +34,6 @@ Url.setBaseFromScript('app.js');
 History.connect(store, 'url');
 
 //debug
-
 Widget.resetCounter();
 Timing.enable('app-loop');
 Debug.enable('app-data');
