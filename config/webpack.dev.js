@@ -12,19 +12,24 @@ var specific = {
             loader: ["style-loader", "css-loader"]
         }]
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
     output: {
         publicPath: '/'
     },
     devtool: 'eval',
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     devServer: {
         hot: true,
         port: 8088,
-        noInfo: false,
         inline: true,
-        historyApiFallback: true
+        historyApiFallback: true,
+        // proxy: {
+        //     '/api': {
+        //         target: 'https://other-server.example.com',
+        //         secure: false
+        //     }
+        // }
     }
 };
 

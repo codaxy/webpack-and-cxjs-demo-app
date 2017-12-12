@@ -26,7 +26,7 @@ export default <cx>
             <ContentPlaceholder name="header"/>
         </header>
         <aside class="aside">
-            <h1>Cx App</h1>
+            <h1>Demo App</h1>
             <dl>
                 <dt>
                     App

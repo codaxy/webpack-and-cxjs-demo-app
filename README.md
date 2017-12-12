@@ -1,2 +1,3 @@
 # webpack-and-cxjs-demo-app
-A CxJS demo app used to illustrate webpack features.
+
+A small CxJS demo app used to illustrate webpack features.
