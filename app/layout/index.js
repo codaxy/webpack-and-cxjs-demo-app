@@ -62,7 +62,7 @@ export default <cx>
                     Admin
                 </dt>
                 <dd>
-                    <Link href="~/orders" url:bind="url">
+                    <Link href="~/orders" url:bind="url" match="prefix">
                         Orders
                     </Link>
                 </dd>

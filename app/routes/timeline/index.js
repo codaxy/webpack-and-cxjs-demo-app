@@ -1,7 +1,9 @@
 import { CategoryAxis, Chart, ColumnGraph, Gridlines, Legend, LineGraph, Marker, NumericAxis, Range, TimeAxis } from 'cx/charts';
 import { ClipRect, Rectangle, Svg, Text } from 'cx/svg';
 import { Checkbox, HtmlElement } from 'cx/widgets';
-import { Controller, KeySelection } from 'cx/ui';
+import { Controller, enableCultureSensitiveFormatting } from 'cx/ui';
+
+enableCultureSensitiveFormatting();
 
 class PageController extends Controller {
     init() {

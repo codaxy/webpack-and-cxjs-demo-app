@@ -19,14 +19,14 @@ export default <cx>
                             <div layout={LabelsLeftLayout}>
                                 <TextField value:bind="$page.order.orderNo" label="Order No." readOnly
                                            placeholder="Auto assigned"/>
-                                <DateField value:bind="$page.order.date" label="Date" required visited/>
+                                <DateField value:bind="$page.order.date" label="Date" required/>
                                 <TextField value:bind="$page.order.status" label="Status"/>
                             </div>
                         </div>
                         <div style="margin-left:50px">
                             <strong>Customer</strong>
                             <div layout={LabelsLeftLayout}>
-                                <TextField value:bind="$page.order.customer" label="Customer" required visited/>
+                                <TextField value:bind="$page.order.customer" label="Customer" required/>
                                 <TextField value:bind="$page.order.email" label="Email"/>
                                 <TextField value:bind="$page.order.country" label="Country"/>
                                 <TextField value:bind="$page.order.city" label="City"/>
