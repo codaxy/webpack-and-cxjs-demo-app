@@ -13,7 +13,7 @@ const AsyncRoute = ({route, prefix, onResolve}) => <cx>
         prefix
     >
         <div visible:bind="$page.routeLoading">
-            <Icon name="routeLoading"/> Loading...
+            <Icon name="loading"/> Loading...
         </div>
         <ContentResolver
             onResolve={onResolve}
